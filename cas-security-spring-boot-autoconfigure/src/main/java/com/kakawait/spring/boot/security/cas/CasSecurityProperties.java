@@ -115,11 +115,11 @@ public class CasSecurityProperties {
             private String logout = "/logout";
 
             /**
-             * CAS Service proxy callback path that will be append to {@link Service#baseUrl}
+             * CAS Service proxy callback path that will be append to {@link Service#baseUrl} if not null
              *
              * @see org.jasig.cas.client.validation.Cas20ServiceTicketValidator#proxyCallbackUrl
              */
-            private String proxyCallback = "/cas/proxy-callback";
+            private String proxyCallback;
         }
 
     }
@@ -128,4 +128,5 @@ public class CasSecurityProperties {
         STATIC,
         DYNAMIC
     }
+
 }
